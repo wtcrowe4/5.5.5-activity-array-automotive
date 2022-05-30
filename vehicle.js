@@ -52,6 +52,7 @@ class Vehicle {
         }
     }
     stop() {
+        console.log('Engine Off')
         this.started = false;
     }
 
@@ -62,21 +63,21 @@ class Vehicle {
         decelerate();
     }
 
-    autoPark()
-    {
+    // autoPark()
+    // {
 
-    }
+    // }
 
-    autoDrive()
-    {
+    // autoDrive()
+    // {
       
-    }
+    // }
 
     typeOfVehicle(wheels) {
         if (this.numberOfWheels == 8 && 8 == wheels) {
             console.log(this.model + " " + this.make + " is a Truck");
         } else if (this.numberOfWheels == 4 && 4 == wheels) {
-            console.log(this.model + " " + this.make + " is a CAr");
+            console.log(this.model + " " + this.make + " is a Car");
         } else if (this.numberOfWheels == 2 && 2 == wheels) {
             console.log(this.model + " " + this.make + " is a Bike");
         } else {
